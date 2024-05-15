@@ -1,5 +1,5 @@
 const { Model, DataTypes } = require("sequelize");
-const sequelize = require("./selectionCDA-Simplon/database");
+const sequelize = require("../database");
 
 class Blague extends Model {}
 

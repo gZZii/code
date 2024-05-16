@@ -4,7 +4,9 @@ const router = express.Router();
 const blagueCtrl = require("../controllers/blague");
 
 router.get("/", blagueCtrl.getAllBlagues);
+router.get("/random", blagueCtrl.getRandomBlague);
 router.get("/:id", blagueCtrl.getBlagueById);
 router.post("/", blagueCtrl.createBlague);
+
 
 module.exports = router;

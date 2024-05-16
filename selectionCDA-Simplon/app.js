@@ -5,6 +5,7 @@ sequelize.sync().then(() => console.log("Database is connected"));
 
 const app = express();
 app.use(express.json());
+app.use(express.static("public"));
 
 const blagueRoutes = require("./routes/blague");
 
@@ -15,7 +16,7 @@ app.listen(3000, () => {
 });
 
 app.get("/", (req, res) => {
-  res.sendFile('./views/index.html', { root: __dirname });
+  res.sendFile('./public/index.html', { root: __dirname });
 });
 
 module.exports = app;

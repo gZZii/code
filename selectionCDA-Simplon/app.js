@@ -1,5 +1,7 @@
 const express = require("express");
 const sequelize = require("./database");
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocs = require('./swagger');
 
 sequelize.sync().then(() => console.log("Database is connected"));
 
@@ -8,6 +10,8 @@ app.use(express.json());
 app.use(express.static("public"));
 
 const blagueRoutes = require("./routes/blague");
+
+app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs));
 
 app.use("/blagues", blagueRoutes);
 

@@ -5,14 +5,15 @@ body{
     background-position: -10% 0%;
     z-index: -1;
     font-family: 'Chewy';
+    color: rgb(251, 255, 0);
 }
 
 h1{
-    color: white;
     text-align: center;
     font-size: 5em;
     margin-top: 0.5em;
-    margin-left: 7em;
+    margin-right: 1em;
+
 }
 
 .title-container{
@@ -26,12 +27,12 @@ h1{
     display: flex;
     flex-direction: row-reverse;
     margin-top: 5em;
-    margin-right: 25em;
+    margin-right: 20em;
 }
 
 button {
-    --green: #1BFD9C;
-    font-size: 15px;
+    --green: #db37b8;
+    font-size: 25px;
     padding: 0.7em 2.7em;
     letter-spacing: 0.06em;
     position: relative;
@@ -47,7 +48,7 @@ button {
   }
   
 button:hover {
-    color: #82ffc9;
+    color: rgb(251, 255, 0);
     box-shadow: inset 0 0 10px rgba(27, 253, 156, 0.6), 0 0 9px 3px rgba(27, 253, 156, 0.2);
 }
   
@@ -76,9 +77,56 @@ button:hover:before {
 }
 
 #blague{
-    color: white;
     font-size: 2em;
     text-align: center;
     margin-left: 5em;
     width: 33%;
+}
+
+/* Media queries  */
+
+@media screen and (max-width: 1440px) {
+    h1 {
+        font-size: 3.5em;
+    }
+
+    .button-container {
+        margin-right: 15em;
+    }
+
+    button {
+        font-size: 20px;
+        padding: 0.5em 2.5em;
+    }
+
+    .blague-container {
+        margin-right: 16em;
+    }
+
+    #blague {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .button-container {
+        margin-right: 7em;
+    }
+
+    button {
+        font-size: 17px;
+        padding: 0.5em 2.5em;
+    }
+
+    .blague-container {
+        margin-right: 10em;
+    }
+
+    #blague {
+        font-size: 1em;
+    }
 }

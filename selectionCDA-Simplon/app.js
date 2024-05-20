@@ -6,6 +6,7 @@ const swaggerDocs = require('./swagger');
 sequelize.sync().then(() => console.log("Database is connected"));
 
 const app = express();
+app.use(cors());
 app.use(express.json());
 app.use(express.static("public"));
 

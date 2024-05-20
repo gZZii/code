@@ -2,6 +2,7 @@ const express = require("express");
 const sequelize = require("./database");
 const swaggerUi = require('swagger-ui-express');
 const swaggerDocs = require('./swagger');
+const cors = require("cors");
 
 sequelize.sync().then(() => console.log("Database is connected"));
 

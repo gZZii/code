@@ -22,7 +22,7 @@ app.listen(3000, () => {
 });
 
 app.get("/", (req, res) => {
-  res.sendFile('./public/index.html', { root: __dirname });
+  res.sendFile('index.html', { root: __dirname });
 });
 
 module.exports = app;

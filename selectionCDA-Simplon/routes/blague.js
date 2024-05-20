@@ -62,7 +62,7 @@ router.get("/:id", blagueCtrl.getBlagueById);
  *           schema:
  *             type: object
  *             properties:
- *               jokeText:
+ *               blague:
  *                 type: string
  *                 description: Texte de la blague
  *             example:

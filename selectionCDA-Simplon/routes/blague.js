@@ -66,7 +66,7 @@ router.get("/:id", blagueCtrl.getBlagueById);
  *                 type: string
  *                 description: Texte de la blague
  *             example:
- *               jokeText: "Quel est le sport le plus silencieux ? Le para-chuuuut !"
+ *               blague: "Quel est le sport le plus silencieux ? Le para-chuuuut !"
  *     responses:
  *       201:
  *         description: Blague créée avec succès
